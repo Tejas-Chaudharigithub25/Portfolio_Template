@@ -1,0 +1,238 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(33, 33, 31);
+    color: white;
+    font-family: Arial;
+}
+.nav-in{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3vh;
+    padding: 1.7%;
+}
+.pages-ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.pages-ul>li{
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+.pages-ul>li:hover{
+    cursor: pointer;
+    border-bottom: 3px solid blue;
+}
+.nav-btn{
+    background-color: rgb(109, 207, 240);
+    font-size: 15px; 
+    font-weight: bold; 
+    padding: 10px 20px 8px 20px;
+    border: 0px;
+}
+/* Responsive Navbar */
+@media screen and (max-width:768px){
+     .pages-ul{
+        display: none;
+    }
+    .pages-uls{
+        margin: 10px 0px 0px 0px;
+        width: 100%;
+    }
+    .pages-uls>li:hover{
+        cursor: pointer;
+        border-bottom: 3px solid blue;
+    }
+    .nav-btn{
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+section.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10% 10% 10%;
+    column-gap: 30%;
+}
+.first{
+    width: 20%;
+}
+.second{
+    width: 50%;
+}
+section>.about-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 10% 2% 10%;
+}
+.first-2{
+    width: 45%;
+    margin: 0px 0px 4%;
+}
+.second-2{
+    width: 20%;
+    margin: 0px 10% 0px 0px;
+}
+section>.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.pngs:hover{
+    box-shadow: 1px 0.5px 10px 0.5px rgb(53, 178, 184);
+}
+.pl-img{
+    display: flex;
+    flex-wrap: wrap;
+    width:75%;
+    justify-content: center;
+    margin: 0% 4% 0px 4%;
+}
+.pl-img>img{
+    width:15%;
+}
+section>.graduation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 3% 4% 0px 4%;
+}
+.grad-card{
+    width:20%;
+    border: 2px solid rgb(53, 178, 184);
+    border-radius: 3px;
+    padding: 10px;
+}
+.grad-card:hover{
+    box-shadow: 1px 0.5px 10px 0.5px rgb(53, 178, 184);
+}
+.card:hover{
+    box-shadow: 1px 0.5px 10px 0.5px rgb(53, 178, 184);
+}
+section>.Projects{
+    display: flex;
+    justify-content: center; 
+}
+
+.btns>button{
+    padding: 7px 20px 5px 20px;
+    border-radius: 17px;
+    font-size: medium;
+    cursor: pointer;
+}
+.Projects{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 2% 0px 0px 3%; 
+}
+.Projects>.card{
+    display: flex;
+    flex-direction: column; 
+    width: 20%;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px 10px;
+}
+section>.btns{
+    display: flex;
+    margin:2% 0px 2% 11%; 
+}
+
+.in{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3% 10% 0px 10%;
+}
+.first-3{
+    width: 50%;
+}
+.second-3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.second-3>.contact-card{
+    border: 1px solid gray;
+    width: 100%;
+    overflow: hidden;
+    padding: 25px;
+    margin: 0px 0px 15px 0px;
+    box-shadow: 1px 0.5px 10px 0.5px rgb(53, 178, 184);
+}
+input, textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 7px 0px 7px;
+    background-color: rgba(48, 45, 45, 0.486);
+    border: 0px;
+    border-bottom: 1px solid rgb(109, 194, 231);
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px 25px 0px;
+}
+
+/* Responsive about */
+@media screen and (max-width:768px){
+    .first{
+        width: 100%;
+        margin: 0px 0px 4%;
+    }
+    .second{
+        width: 100%;
+        margin: 0px 0px 4%;
+    }
+    .first-2{
+        width: 100%;
+        margin: 0px 0px 4%;
+    }
+    .second-2{
+        width: 100%;
+        margin: 0px 0px 4%;
+    }
+    .pl-img{
+        width: 70%;
+        justify-content: center;
+    }
+    .pl-img>img{
+        width: 30%;
+    }
+    section>.graduation{
+        margin: 5% 4% 0px 10%;
+    }
+    .grad-card{
+        width: 100%;
+    }
+    .Projects>.card{
+        width: 100%;
+        margin: 5% 4% 0px 10%;
+    }
+    .btns>button{
+        margin: 3% 0px 0px 0px;
+    }
+    .in{
+        margin: 5% 4% 0px 10%;
+    }
+    .first-3{
+        width: 100%;
+        margin: 2% 0px 10% 0px;
+    }
+    .second-3{
+        width: 100%;
+    }
+}
